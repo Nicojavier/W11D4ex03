@@ -1,7 +1,8 @@
 const aumentarFuente = document.querySelector("#aumentarFuente");
 const disminuirFuente = document.querySelector("#disminuirFuente")
-const contraste =document.querySelector("#contraste");
+const cambiarModo =document.querySelector("#cambiarModo");
 const body = document.body;
+
 
 let TamFuente = 16;
 
@@ -15,6 +16,7 @@ disminuirFuente.addEventListener("click", () => {
     body.style.fontSize = TamFuente + "px";
 });
 
-contraste.addEventListener("click", () => {
-    
-} )
+cambiarModo.addEventListener("click", () => {
+    body.style.backgroundColor = body.style.backgroundColor === "black" ? "white" : "black";
+    body.style.color = body.style.color === "white" ? "black" : "white";
+});

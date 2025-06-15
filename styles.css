@@ -2,6 +2,8 @@ body    {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: var(--body-bg);
+    color: var(--body-color);
 }
 
 header  {
@@ -58,4 +60,9 @@ footer  {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     text-align: center;
+}
+
+.mensajeError{
+    color:red;
+    font-size: 1em;
 }
