@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    
+    <header>
+            <h1>Biblioteca Comunitaria</h1>
+    </header>
+    <nav rule="navigation" aria-label="Menu Principal">
+        <a class="menuLink" href="/index.html">Inicio</a>
+        <a class="menuLink" href="#">Pagina 1</a>
+        <a class="menuLink" href="#">Pagina 2</a>
+        <a class="menuLink" href="/contact.html">Contacto</a>
+    </nav>
+    <main>
+        <section>
+            <h3>Accesibilidad</h3>
+            <button id="aumentarFuente">Aumentar Tamaño Texto</button>
+            <button id="disminuirFuente">Disminuir Tamaño Texto</button>
+            <button id="cambiarModo">Cambiar Modo</button>
+        </section>
+        <section>
+            <h2>Contacto</h2>
+            <p>Para cualquier consulta, por favor envíanos un mensaje a través del siguiente formulario:</p>
+            <form id="Formulario1" aria-labelledby="Formulario1">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required aria-describedby="errorNombre">
+                    <span id="errorNombre" class="mensajeError" aria-live="polite"></span>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required aria-describedby="errorEmail">
+                    <span id="errorEmail" class="mensajeError" aria-live="polite"></span>
+                </div>
+                <div>
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" required aria-describedby="errorAsunto">
+                    <span id="errorAsunto" class="mensajeError" aria-live="polite"></span>
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required aria-describedby="errorMensaje"></textarea>
+                    <span id="errorMensaje" class="mensajeError" aria-live="polite"></span>
+                </div>
+                <div>
+                <button type="submit">Enviar Formulario</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <span>Ningún derecho reservado</span>
+    </footer>
+    <script src="/script.js"></script>
+    <script src="/form.js"></script>
 </body>
 </html>
